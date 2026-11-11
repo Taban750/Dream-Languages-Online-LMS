@@ -119,7 +119,7 @@ Apply the checked-in Drizzle migrations with `npm run db:migrate` before using h
 
 The auth endpoints, seeded academic/public records, courses, homepage, payment details, admin user management/statistics, student attendance/fee/assignment/session data, and health check use PostgreSQL through Drizzle. Server-rendered portal entry pages enforce roles; the Next.js proxy redirects unauthenticated requests, while database-backed sessions allow logout/revocation and expiry checks.
 
-This repository is a functional starting point, not a complete production LMS. Several dashboard widgets and actions still use static sample values or are presentation-only (including attendance, exams, results, payment processing, timetable management, document upload, CMS editing, and many admin actions). Do not rely on those for real school operations until their APIs, authorization, persistence, validation, and tests are implemented.
+This repository is a functional starting point, not a complete production LMS. Payment processing, exam and result workflows, CMS editing, and some other admin actions remain incomplete or presentation-only. The class scheduling and attendance APIs support core operations, but they still need end-to-end validation against real school accounts and policies before production use. Review each workflow for authorization, persistence, validation, and failure handling before relying on it for school operations.
 
 Useful checks:
 

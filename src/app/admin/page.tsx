@@ -78,7 +78,6 @@ export default async function AdminDashboard() {
               <span className="text-xs font-semibold opacity-60 uppercase tracking-wider">{s.label}</span>
             </div>
             <div className="text-3xl font-bold" style={{ color: s.color }}>{s.value}</div>
-            <div className="mt-3 progress-tube"><span style={{ width: "60%" }} /></div>
           </GlassCard>
         ))}
       </div>
