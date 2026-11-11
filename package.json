@@ -19,7 +19,7 @@
     "test:father-dla": "tsx --test tests/father-dla.test.ts"
   },
   "dependencies": {
-    "@fullcalendar/react": "^7.1.3",
+    "@fullcalendar/react": "^7.1.4",
     "@supabase/ssr": "^0.12.7",
     "@supabase/supabase-js": "^2.118.0",
     "@upstash/ratelimit": "^2.2.0",
